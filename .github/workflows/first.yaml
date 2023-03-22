@@ -15,3 +15,8 @@ jobs:
           node -v
           ls -a
           who
+      - name: python command
+        run: |
+          import platform
+          print(plaform.processor())
+        shell: python
