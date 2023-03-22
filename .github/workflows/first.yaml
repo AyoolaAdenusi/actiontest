@@ -24,7 +24,7 @@ jobs:
       - name: Terraform plan
         run:  terraform plan
       - name: Terraform destroy
-        run: terraform destroy -target="aws_vpc" "actions".vpc-07405e215174debff --auto-approve
+        run: terraform destroy -target="aws_vpc".vpc-07405e215174debff --auto-approve
       - name: Multi line string
         run:  |
           pwd
